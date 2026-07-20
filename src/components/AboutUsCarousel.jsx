@@ -166,6 +166,8 @@ const AboutUsGrid = () => {
           <div key={i} className="flex flex-row items-center flex-shrink-0">
             <div className="rounded-full overflow-hidden w-44 h-44 sm:w-52 sm:h-52 lg:w-54 lg:h-54 flex items-center justify-center mb-4 border-[#a8d940] border-2">
               <img
+                loading="lazy"
+                decoding="async"
                 src={card.img}
                 alt=""
                 className="w-full h-full object-cover rounded-full"

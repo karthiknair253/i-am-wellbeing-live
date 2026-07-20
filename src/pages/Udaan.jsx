@@ -131,6 +131,8 @@ const Udaan = () => {
                         <div className="flex flex-col lg:flex-row gap-8 mt-8">
                             <div className="relative w-full lg:w-1/2 max-md:w-2/3 max-md:m-auto max-xs:w-full">
                                 <img
+                                    loading="lazy"
+                                    decoding="async"
                                     src={map}
                                     alt="Map Illustration"
                                     className="w-full h-full "
@@ -189,6 +191,8 @@ const Udaan = () => {
                                 </div>
                                 <div className="mt-4 lg:mt-[28%]">
                                     <img
+                                        loading="lazy"
+                                        decoding="async"
                                         src={peoples}
                                         alt="Illustration"
                                         className="w-full h-auto"
@@ -231,6 +235,8 @@ const Udaan = () => {
                             </div>
                             <div className="flex justify-center  rounded-5xl overflow-hidden">
                                 <img
+                                    loading="lazy"
+                                    decoding="async"
                                     src={TicVideo1}
                                     alt="Training Bharat"
                                     style={{ borderRadius: '15px' }}

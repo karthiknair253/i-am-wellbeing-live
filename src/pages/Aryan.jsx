@@ -353,11 +353,15 @@ const Aryan = () => {
                     {/* RIGHT IMAGES */}
                     <div className="flex flex-col items-center lg:items-end gap-5 lg:w-[50%] sm:w-[90%] w-full lg:mt-10 mt-0">
                         <img
+                            loading="lazy"
+                            decoding="async"
                             src={Safety1}
                             alt="Training group 1"
                             className="rounded-2xl w-full max-w-md h-25 sm:h-[15rem] lg:h-[14rem] object-cover"
                         />
                         <img
+                            loading="lazy"
+                            decoding="async"
                             src={Safety2}
                             alt="Training group 2"
                             className="rounded-2xl w-full max-w-md h-25 sm:h-[15rem] lg:h-[14rem] object-cover"

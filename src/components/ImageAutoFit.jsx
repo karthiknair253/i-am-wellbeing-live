@@ -29,16 +29,10 @@
 //   );
 // }
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export function ImageAutoFit({ src, index, sizesMap = {} }) {
   const [loaded, setLoaded] = useState(false);
-
-  useEffect(() => {
-    const img = new Image();
-    img.src = src;
-    img.onload = () => setLoaded(true);
-  }, [src]);
 
   // Get custom width/height from sizesMap object
   const customSize = sizesMap[index] || {};
@@ -58,13 +52,14 @@ export function ImageAutoFit({ src, index, sizesMap = {} }) {
         <div className="w-full h-full bg-gray-300 animate-pulse" />
       )}
 
-      {loaded && (
-        <img
-          src={src}
-          alt={`image-${index}`}
-          className="w-full h-full object-cover object-center transition-all duration-500"
-        />
-      )}
+      <img
+        src={src}
+        alt={`image-${index}`}
+        loading="lazy"
+        decoding="async"
+        onLoad={() => setLoaded(true)}
+        className={`w-full h-full object-cover object-center transition-all duration-500 ${loaded ? "opacity-100" : "opacity-0"}`}
+      />
     </div>
   );
 }

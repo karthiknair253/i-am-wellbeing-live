@@ -17,6 +17,8 @@ const CollageImage = () => {
       {/* Image 1 */}
       <div className="flex justify-start" data-aos="fade-right">
         <img
+          loading="lazy"
+          decoding="async"
           src={image1}
           alt="image1"
           className="w-[70%] md:w-[60%] h-[24vh] md:h-[54vh] object-cover"
@@ -26,6 +28,8 @@ const CollageImage = () => {
       {/* Image 2 */}
       <div className="flex justify-end" data-aos="fade-left">
         <img
+          loading="lazy"
+          decoding="async"
           src={image2}
           alt="image2"
           className="w-[70%] md:w-[68%] h-[24vh] md:h-[54vh] -mt-12 md:-mt-[15%] object-cover"
@@ -35,6 +39,8 @@ const CollageImage = () => {
       {/* Image 3 */}
       <div className="flex justify-start" data-aos="fade-right">
         <img
+          loading="lazy"
+          decoding="async"
           src={image3}
           alt="image3"
           className="w-[70%] md:w-[60%] h-[24vh] md:h-[54vh] -mt-10 md:-mt-[7%] object-cover"
@@ -44,6 +50,8 @@ const CollageImage = () => {
       {/* Image 4 */}
       <div className="flex justify-end" data-aos="fade-left">
         <img
+          loading="lazy"
+          decoding="async"
           src={image4}
           alt="image4"
           className="w-[70%] md:w-[68%] h-[24vh] md:h-[54vh] -mt-12 md:-mt-[15%] object-cover"
