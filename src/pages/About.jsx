@@ -262,6 +262,8 @@ const About = () => {
             className="flex flex-col items-center gap-4 lg:w-1/2 overflow-hidden rounded-4xl  "
           >
             <img
+              loading="lazy"
+              decoding="async"
               className="w-full h-auto object-cover rounded-4xl border-2 border-[#545656]"
               style={{ borderRadius: "1.5rem" }}
               src={Founder1}
@@ -332,6 +334,8 @@ const About = () => {
               <div key={index} className="flex flex-col items-center text-center">
                 <div className={`w-62 h-62 `}>
                   <img
+                    loading="lazy"
+                    decoding="async"
                     src={consultant.imgSrc}
                     alt={consultant.name}
                     className={`w-full h-full object-contain `}

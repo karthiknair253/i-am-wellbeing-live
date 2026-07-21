@@ -18,13 +18,13 @@ const WalkingPerson = () => {
       
       {/* Images Container */}
       <div className="flex">
-        <img src={animationimage1} alt="Character" className="w-[14%] h-[50%] mt-[9%] object-cover" />
-        <img src={animationimage2} alt="Character" className="w-[14%] mt-[6%] object-cover" />
-        <img src={animationimage3} alt="Character" className="w-[14%] mt-[2%] object-cover" />
-        <img src={animationimage4} alt="Character" className="w-[14%] object-cover" />
-        <img src={animationimage5} alt="Character" className="w-[14%] object-cover" />
-        <img src={animation6} alt="Character" className="w-[14%] mb-[2%]" />
-        <img src={animationimage7} alt="Character" className="w-[14%] mb-[2%] object-cover" />
+        <img loading="lazy" decoding="async" src={animationimage1} alt="Character" className="w-[14%] h-[50%] mt-[9%] object-cover" />
+        <img loading="lazy" decoding="async" src={animationimage2} alt="Character" className="w-[14%] mt-[6%] object-cover" />
+        <img loading="lazy" decoding="async" src={animationimage3} alt="Character" className="w-[14%] mt-[2%] object-cover" />
+        <img loading="lazy" decoding="async" src={animationimage4} alt="Character" className="w-[14%] object-cover" />
+        <img loading="lazy" decoding="async" src={animationimage5} alt="Character" className="w-[14%] object-cover" />
+        <img loading="lazy" decoding="async" src={animation6} alt="Character" className="w-[14%] mb-[2%]" />
+        <img loading="lazy" decoding="async" src={animationimage7} alt="Character" className="w-[14%] mb-[2%] object-cover" />
       </div>
     </div>
   );
