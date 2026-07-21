@@ -455,6 +455,8 @@ const Programe = () => {
                         className="relative w-[310px] bg-black border-2 border-black sm:w-[280px] md:w-[250px] lg:w-[240px] h-[150px] sm:h-[180px] md:h-[190px] lg:h-[160px] rounded-xl overflow-hidden shadow-md"
                       >
                         <img
+                          loading="lazy"
+                          decoding="async"
                           src={item.img}
                           alt={`image-${i}`}
                           className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
@@ -528,6 +530,8 @@ const Programe = () => {
                     className="w-[340px] sm:w-[290px] md:w-[200px] lg:w-[240px] h-[200px] sm:h-[180px] md:h-[150px] lg:h-[160px] rounded-3xl overflow-hidden shadow-md border-4 border-[#545656]"
                   >
                     <img
+                      loading="lazy"
+                      decoding="async"
                       src={img}
                       alt={`image-${i}`}
                       className="w-full h-full object-contain object-center hover:scale-105 transition-transform duration-300"
@@ -581,6 +585,8 @@ const Programe = () => {
                     className="w-[340px] sm:w-[300px] md:w-[290px] lg:w-[240px] h-[210px] sm:h-[200px] md:h-[190px] lg:h-[160px] rounded-3xl overflow-hidden shadow-md border-2 border-[#545656]"
                   >
                     <img
+                      loading="lazy"
+                      decoding="async"
                       src={img}
                       alt={`image-${i}`}
                       className="w-full h-full object-contain hover:scale-105 transition-transform duration-300"
@@ -638,16 +644,22 @@ const Programe = () => {
 
             <div className="flex flex-col items-center lg:items-end gap-5 w-[340px] sm:w-[620px] md:w-[720px] lg:w-[450px] h-[600px] sm:h-[600px] md:h-[890px] lg:h-[450px] ">
               <img
+                loading="lazy"
+                decoding="async"
                 src={show1}
                 alt="Training group 1"
                 className="rounded-3xl w-full max-w-md h-35 sm:h-25 lg:h-[16rem] object-cover   border-2 border-[#545656]"
               />
               <img
+                loading="lazy"
+                decoding="async"
                 src={show2}
                 alt="Training group 2"
                 className="rounded-3xl w-full max-w-md h-35 sm:h-25 lg:h-[16rem] object-cover border-2 border-[#545656]"
               />
               <img
+                loading="lazy"
+                decoding="async"
                 src={show3}
                 alt="Training group 3"
                 className="rounded-3xl w-full max-w-md h-35 sm:h-25 lg:h-[16rem] object-cover border-2 border-[#545656]"
@@ -665,6 +677,8 @@ const Programe = () => {
           <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start justify-center items-center gap-3">
             <div className="flex justify-center lg:w-1/2 ">
               <img
+                loading="lazy"
+                decoding="async"
                 src={bharat}
                 alt="Training Bharat"
                 className=" w-full object-contain object-center"
@@ -741,11 +755,15 @@ const Programe = () => {
           {/* RIGHT IMAGES */}
           <div className="flex flex-col items-center lg:items-end gap-5 w-[340px] sm:w-[620px] md:w-[720px] lg:w-[450px] h-[300px] sm:h-[600px] md:h-[890px] lg:h-[450px] ">
             <img
+              loading="lazy"
+              decoding="async"
               src={capacity1}
               alt="Training group 1"
               className="rounded-2xl w-full h-full object-cover object-center border-2 border-[#545656]"
             />
             <img
+              loading="lazy"
+              decoding="async"
               src={capacity2}
               alt="Training group 2"
               className="rounded-2xl w-full h-full object-cover object-center border-2 border-[#545656]"

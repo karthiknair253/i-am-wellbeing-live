@@ -25,6 +25,9 @@ export default function Carousel() {
       <img
         src={images[currentIndex]}
         alt={`slide-${currentIndex}`}
+        loading="eager"
+        decoding="async"
+        fetchPriority="high"
         className="w-full h-[500px] sm:h-[500px] md:h-[600px] lg:h-[600px] xl:h-[800px] object-cover object-center bg-white transition-all duration-700 ease-in-out"
       />
 

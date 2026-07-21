@@ -187,7 +187,7 @@ const Tic = () => {
                       className="flex flex-col items-center text-center mx-4 sm:mx-6"
                     >
                       <div className="w-28 h-28 rounded-full overflow-hidden border-2 border-[#545656] bg-white shadow-md flex items-center justify-center">
-                        <img src={item.src} alt={item.title} className="w-full h-full object-cover" />
+                        <img loading="lazy" decoding="async" src={item.src} alt={item.title} className="w-full h-full object-cover" />
                       </div>
                     </div>
                   ))}
@@ -201,7 +201,7 @@ const Tic = () => {
                     className="relative z-10 flex flex-col items-center text-center mx-6"
                   >
                     <div className="w-36 h-36 rounded-full overflow-hidden border-2 border-[#545656] bg-white shadow-md flex items-center justify-center">
-                      <img src={item.src} alt={item.title} className="w-full h-full object-cover" />
+                      <img loading="lazy" decoding="async" src={item.src} alt={item.title} className="w-full h-full object-cover" />
                     </div>
                   </div>
                 ))}
@@ -218,7 +218,7 @@ const Tic = () => {
                     <div key={index} className="text-center mx-4">
                       <h3 className="text-base font-semibold py-3">{item.title}</h3>
                       <div className="w-28 h-28 rounded-full overflow-hidden border-2 border-[#545656] bg-white shadow-md flex items-center justify-center">
-                        <img src={item.img} alt={item.title} className="w-full h-full object-cover" />
+                        <img loading="lazy" decoding="async" src={item.img} alt={item.title} className="w-full h-full object-cover" />
                       </div>
                     </div>
                   ))}
@@ -233,7 +233,7 @@ const Tic = () => {
                   >
                     <h3 className="text-xl md:text-2xl font-semibold py-5">{item.title}</h3>
                     <div className="w-36 h-36 rounded-full overflow-hidden border-2 border-[#545656] bg-white shadow-md flex items-center justify-center">
-                      <img src={item.img} alt={item.title} className="w-full h-full object-cover" />
+                      <img loading="lazy" decoding="async" src={item.img} alt={item.title} className="w-full h-full object-cover" />
                     </div>
                   </div>
                 ))}

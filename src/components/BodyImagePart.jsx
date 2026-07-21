@@ -44,6 +44,8 @@ const BodyImagePart = () => {
 
         {/* Nerves Image */}
         <img
+          loading="lazy"
+          decoding="async"
           src={nerves}
           alt="nerves"
           className={`relative z-5 -left-3 max-md:-left-3 max-sm:left-[-7px] -top-16 sm:w-10/12 lg:w-[95%] md:w-full xl:w-[65%] h-auto object-contain w-full transition-all duration-[2000ms] ease-in-out ${
