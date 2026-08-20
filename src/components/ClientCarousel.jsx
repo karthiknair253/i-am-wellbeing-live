@@ -16,7 +16,7 @@ import clientFourteenImg from "../imgs/logos/IMG_5238.PNG";
 import clientFifteenImg from "../imgs/logos/IMG_5239.PNG";
 import clientSixteenImg from "../imgs/logos/IMG_5240.PNG";
 import clientSeventeenImg from "../imgs/logos/IMG_5241.PNG";
-import clientEighteenImg from "../imgs/logos/IMG_5242.PNG";
+import clientEighteenImg from "../imgs/logos/IMG_5242.jpg";
 import clientNineteenImg from "../imgs/logos/IMG_5243.PNG";
 import clientTwentyImg from "../imgs/logos/IMG_5244.JPG";
 import clientTwentyOneImg from "../imgs/logos/IMG_5245.JPG";
@@ -70,7 +70,6 @@ const ClientCarousel = () => {
           <div key={i} className="h-32 sm:h-36 md:h-40 px-1"> {/* Less spacing */}
             <div className="h-full flex justify-center items-center bg-white rounded-lg overflow-hidden">
               <img
-                loading="lazy"
                 className={`object-contain max-h-full ${
                   i < 7
                     ? "scale-110"
