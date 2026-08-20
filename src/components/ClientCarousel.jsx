@@ -6,10 +6,10 @@ import clientFourImg from "../imgs/Home/4.png";
 import clientFiveImg from "../imgs/Home/5.png";
 import clientSixImg from "../imgs/Home/6.jpeg";
 import clientSevenImg from "../imgs/Home/7.png";
-import clientEightImg from "../imgs/logos/IMG_3929.GIF";
+import clientEightImg from "../imgs/logos/government-of-punjab.svg";
 import clientNineImg from "../imgs/logos/IMG_3930.JPG";
 import clientTenImg from "../imgs/logos/IMG_3931.PNG";
-import clientElevenImg from "../imgs/logos/IMG_3932.png";
+import clientElevenImg from "../imgs/logos/vartamaan.jpeg";
 import clientTwelveImg from "../imgs/logos/IMG_5236.PNG";
 import clientThirteenImg from "../imgs/logos/IMG_5237.JPG";
 import clientFourteenImg from "../imgs/logos/IMG_5238.PNG";
@@ -29,14 +29,22 @@ const clientImg = [
   clientNineteenImg, clientTwentyImg, clientTwentyOneImg,
 ];
 
+// Compensate for whitespace baked into individual source files so every
+// organisation mark has a similar visual weight without being cropped.
+const clientLogoScale = [
+  0.92, 1.08, 1, 0.9, 0.92, 0.92, 0.9,
+  0.95, 1, 0.96, 1.2, 1.04, 1.06, 0.92,
+  0.9, 1.04, 0.9, 1.06, 1.04, 0.88, 0.88,
+];
+
 const ClientCarousel = () => {
   const settings = {
     dots: false,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 0, // continuous scrolling
-    speed: 10000, // slower and smoother
-    cssEase: "linear", // smooth continuous motion
+    autoplaySpeed: 0,
+    speed: 2500, // show the complete 21-logo set in under a minute
+    cssEase: "linear",
     slidesToShow: 5,
     slidesToScroll: 1,
     pauseOnHover: false,
@@ -67,16 +75,15 @@ const ClientCarousel = () => {
     <div className="container mx-auto py-5 px-4">
       <Slider {...settings} className="py-6">
         {clientImg.map((img, i) => (
-          <div key={i} className="h-32 sm:h-36 md:h-40 px-1"> {/* Less spacing */}
-            <div className="h-full flex justify-center items-center bg-white rounded-lg overflow-hidden">
+          <div key={i} className="h-32 sm:h-36 md:h-40 px-3">
+            <div className="h-full flex justify-center items-center bg-white rounded-lg overflow-hidden p-3">
               <img
-                className={`object-contain max-h-full ${
-                  i < 7
-                    ? "scale-110"
-                    : i === 15 || i === 17
-                    ? "scale-125"
-                    : "scale-100"
-                }`}
+                className="block object-contain transition-transform duration-300"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  transform: `scale(${clientLogoScale[i]})`,
+                }}
                 src={img}
                 alt={`Client logo ${i + 1}`}
               />
