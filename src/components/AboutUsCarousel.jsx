@@ -127,14 +127,13 @@
 "use client";
 import { motion } from "framer-motion";
 import PropTypes from "prop-types";
+import circle1 from "../imgs/Home/circle_1.webp";
+import circle2 from "../imgs/Home/circle_2.webp";
+import circle3 from "../imgs/Home/circle_3.webp";
+import circle4 from "../imgs/Home/circle_4.webp";
 import circle5 from "../imgs/Home/circle6.jpeg"
 import circle6 from "../imgs/Home/circle6.png"
 
-
-const circle1 = `${import.meta.env.VITE_PUBLIC_URL}/Home/circle_1.png`;
-const circle2 = `${import.meta.env.VITE_PUBLIC_URL}/Home/circle_2.png`;
-const circle3 = `${import.meta.env.VITE_PUBLIC_URL}/Home/circle_3.png`;
-const circle4 = `${import.meta.env.VITE_PUBLIC_URL}/Home/circle_4.png`;
 // const circle5 = `${import.meta.env.VITE_PUBLIC_URL}/Home/circle_5.png`;
 // const circle6 = `${import.meta.env.VITE_PUBLIC_URL}/Home/circle_6.png`;
 
@@ -212,5 +211,4 @@ SvgIcon.propTypes = {
 };
 
 export default AboutUsGrid;
-
 
