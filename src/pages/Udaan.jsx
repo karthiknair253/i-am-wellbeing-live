@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from 'react'
 import heroimageudaan from "../imgs/program-images/udaanHero.png";
+import communityIllustration from "../imgs/program-images/udaan-community.png";
 
 import { ImageAutoFit } from '../components/ImageAutoFit';
-const peoples = `${import.meta.env.VITE_PUBLIC_URL}/phase-2/4.svg`;
 import map from "../imgs/program-images/map.png";
 import { motion } from "framer-motion"; // Framer Motion for animation
 import { FaMapMarkerAlt } from "react-icons/fa"; // Location icon
@@ -193,8 +193,8 @@ const Udaan = () => {
                                     <img
                                         loading="lazy"
                                         decoding="async"
-                                        src={peoples}
-                                        alt="Illustration"
+                                        src={communityIllustration}
+                                        alt="A comparison between harmful responses and trauma-informed care"
                                         className="w-full h-auto"
                                     />
                                 </div>
@@ -254,4 +254,3 @@ const Udaan = () => {
 }
 
 export default Udaan
-

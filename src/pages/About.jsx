@@ -4,29 +4,29 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 import BlurryImages from "../components/BlurryImages";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import avanti from "../imgs/about/Sukuh.png"
-import team6 from "../imgs/about/Enas.png";
+import team6 from "../imgs/about/enas-shuaib.png";
 import consultant5 from "../imgs/about/Faseeh.png";
-import consultant8 from "../imgs/about/Shambhavi.png"
 import Founder1 from "../imgs/about/Akansha1.png"
 import Poster5 from "../imgs/about/poster5.png"
 import annualReport1 from "../imgs/aboutus-images/annualreport1.png";
 import annualReport2 from "../imgs/aboutus-images/annualreport2.png";
 import annualReport3 from "../imgs/aboutus-images/annualreport3.png";
 import annualReport4 from "../imgs/aboutus-images/annualreport4.jpeg";
-import team1 from "../imgs/home-images/team_1.png";
-import team2 from "../imgs/home-images/team_2.png";
-import team3 from "../imgs/home-images/team_3.png";
-import team4 from "../imgs/home-images/team_4.png";
-import team5 from "../imgs/home-images/team_5.png";
-import consultant1 from "../imgs/home-images/consultant_1.png";
-import consultant2 from "../imgs/home-images/consultant_2.png";
-import consultant3 from "../imgs/home-images/consultant_3.png";
-import consultant4 from "../imgs/home-images/consultant_4.png";
-import consultant6 from "../imgs/home-images/consultant_6.png";
-import consultant7 from "../imgs/home-images/consultant_7.png";
-import consultant10 from "../imgs/home-images/consultant_10.png";
-import consultant11 from "../imgs/home-images/consultant_11.png";
+import team1 from "../imgs/about/akanksha-chandele.png";
+import team2 from "../imgs/about/pallavi-singh.png";
+import team3 from "../imgs/about/atufa-khan.png";
+import team4 from "../imgs/about/ishi-agarwal.png";
+import team5 from "../imgs/about/shubhi-bankawat.png";
+import consultant1 from "../imgs/about/preeta-ganguli.png";
+import consultant2 from "../imgs/about/maitreyi-nigwekar.png";
+import consultant3 from "../imgs/about/veena-hari.png";
+import consultant4 from "../imgs/about/rakshita-goel.png";
+import consultant6 from "../imgs/about/yasha-malhotra.png";
+import consultant7 from "../imgs/about/nishtha-lamba.png";
+import consultant8 from "../imgs/about/shambhavi-singh.png";
+import consultant9 from "../imgs/about/sukun-chandele.png";
+import consultant10 from "../imgs/about/dr-shiraz.png";
+import consultant11 from "../imgs/about/anurag-chaubey.png";
 
 
 import { Heading } from "../components/heading";
@@ -38,8 +38,6 @@ import { Heading } from "../components/heading";
 // const consultant9 = `${
 //   import.meta.env.VITE_PUBLIC_URL
 // }/aboutus-images/Avanti.png`;
-const consultant9 = avanti
-
 const breathe = {
   hidden: {
     opacity: 0,
@@ -309,8 +307,8 @@ const About = () => {
         <div className="team-container grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 max-w-7xl m-auto gap-10 mt-10">
           {consultants.map((consultant, index) => {
             return (
-              <div key={index} className="flex flex-col items-center text-center">
-                <div className={`w-62 h-62 `}>
+              <div key={index} className="flex min-w-0 flex-col items-center text-center">
+                <div className="w-full max-w-[240px] aspect-square">
                   <img
                     loading="lazy"
                     decoding="async"
@@ -320,7 +318,7 @@ const About = () => {
                   />
                 </div>
 
-                <div className="details -mt-4">
+                <div className="details mt-2 min-h-[58px] px-1">
                   <h6 className="font-bold text-black uppercase text-lg font-alegreya">
                     {consultant.name}
                   </h6>
