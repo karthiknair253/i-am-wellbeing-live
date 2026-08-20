@@ -10,6 +10,10 @@ import consultant5 from "../imgs/about/Faseeh.png";
 import consultant8 from "../imgs/about/Shambhavi.png"
 import Founder1 from "../imgs/about/Akansha1.png"
 import Poster5 from "../imgs/about/poster5.png"
+import annualReport1 from "../imgs/aboutus-images/annualreport1.png";
+import annualReport2 from "../imgs/aboutus-images/annualreport2.png";
+import annualReport3 from "../imgs/aboutus-images/annualreport3.png";
+import annualReport4 from "../imgs/aboutus-images/annualreport4.jpeg";
 import team1 from "../imgs/home-images/team_1.png";
 import team2 from "../imgs/home-images/team_2.png";
 import team3 from "../imgs/home-images/team_3.png";
@@ -35,16 +39,6 @@ import { Heading } from "../components/heading";
 //   import.meta.env.VITE_PUBLIC_URL
 // }/aboutus-images/Avanti.png`;
 const consultant9 = avanti
-
-// annual reports images
-const annualReport1 = `${import.meta.env.VITE_PUBLIC_URL
-  }/aboutus-images/annualreport1.png`;
-const annualReport2 = `${import.meta.env.VITE_PUBLIC_URL
-  }/aboutus-images/annualreport2.png`;
-const annualReport3 = `${import.meta.env.VITE_PUBLIC_URL
-  }/aboutus-images/annualreport3.png`;
-const annualReport4 = `${import.meta.env.VITE_PUBLIC_URL
-  }/aboutus-images/annualreport4.jpeg`;
 
 const breathe = {
   hidden: {
