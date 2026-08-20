@@ -30,11 +30,6 @@ const lastBox = {
   },
 };
 
-const people = `${import.meta.env.VITE_PUBLIC_URL}/Home/peopleNewGreen.png`
-const design = `${import.meta.env.VITE_PUBLIC_URL}/Home/design.png`;
-// const video = `${import.meta.env.VITE_PUBLIC_URL}/Home/vd.mp4`;
-
-const intro = `${import.meta.env.VITE_PUBLIC_URL}/Home/intro.png`;
 
 
 import Testimonials from "../components/Testimonials";

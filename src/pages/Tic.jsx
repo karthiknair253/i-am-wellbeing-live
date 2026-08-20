@@ -14,20 +14,6 @@ import Point3 from "../imgs/tic/point3.png"
 import Point4 from "../imgs/tic/point4.png"
 import Point5 from "../imgs/tic/point5.png"
 import { Heading } from "../components/heading";
-const miniMagic = `${import.meta.env.VITE_PUBLIC_URL
-  }/Home/mini_magick20190427-2009-ff1osr.png`;
-const tic2 = `${import.meta.env.VITE_PUBLIC_URL}/Home/tic2.png`;
-const test1 = `${import.meta.env.VITE_PUBLIC_URL
-  }/ticp-images/quote-bg-green.png`;
-const resistImg = `${import.meta.env.VITE_PUBLIC_URL}/Home/resist.png`;
-const realiseImg = `${import.meta.env.VITE_PUBLIC_URL}/Home/realise.png`;
-const recogniseImg = `${import.meta.env.VITE_PUBLIC_URL}/Home/recognise.png`;
-const respondImg = `${import.meta.env.VITE_PUBLIC_URL}/Home/respond.png`;
-
-const tic_1 = `${import.meta.env.VITE_PUBLIC_URL}/ticp-images/tic_1.png`
-const tic_2 = `${import.meta.env.VITE_PUBLIC_URL}/ticp-images/tic_2.png`
-
-
 const Tic = () => {
   const cards = [
     {

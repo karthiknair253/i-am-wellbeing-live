@@ -10,45 +10,31 @@ import consultant5 from "../imgs/about/Faseeh.png";
 import consultant8 from "../imgs/about/Shambhavi.png"
 import Founder1 from "../imgs/about/Akansha1.png"
 import Poster5 from "../imgs/about/poster5.png"
+import team1 from "../imgs/home-images/team_1.png";
+import team2 from "../imgs/home-images/team_2.png";
+import team3 from "../imgs/home-images/team_3.png";
+import team4 from "../imgs/home-images/team_4.png";
+import team5 from "../imgs/home-images/team_5.png";
+import consultant1 from "../imgs/home-images/consultant_1.png";
+import consultant2 from "../imgs/home-images/consultant_2.png";
+import consultant3 from "../imgs/home-images/consultant_3.png";
+import consultant4 from "../imgs/home-images/consultant_4.png";
+import consultant6 from "../imgs/home-images/consultant_6.png";
+import consultant7 from "../imgs/home-images/consultant_7.png";
+import consultant10 from "../imgs/home-images/consultant_10.png";
+import consultant11 from "../imgs/home-images/consultant_11.png";
 
 
 import { Heading } from "../components/heading";
-// team images
-const team1 = `${import.meta.env.VITE_PUBLIC_URL}/aboutus-images/Akanshaa.png`;
-const team2 = `${import.meta.env.VITE_PUBLIC_URL}/aboutus-images/Pallavii.png`;
-const team3 = `${import.meta.env.VITE_PUBLIC_URL}/aboutus-images/Atufa.png`;
-const team4 = `${import.meta.env.VITE_PUBLIC_URL}/aboutus-images/Ishi.png`;
-const team5 = `${import.meta.env.VITE_PUBLIC_URL}/aboutus-images/Shubhi.png`;
-
-
 // consultant images
-// consultant images
-const consultant1 = `${import.meta.env.VITE_PUBLIC_URL
-  }/aboutus-images/Preeta.png`;
-const consultant2 = `${import.meta.env.VITE_PUBLIC_URL
-  }/aboutus-images/Maitreyi.png`;
-const consultant3 = `${import.meta.env.VITE_PUBLIC_URL
-  }/aboutus-images/Veena.png`;
-const consultant4 = `${import.meta.env.VITE_PUBLIC_URL
-  }/aboutus-images/Rakshita.png`;
 // const consultant5 = `${import.meta.env.VITE_PUBLIC_URL
 //   }/aboutus-images/Shambhavi.png`;
-const consultant6 = `${import.meta.env.VITE_PUBLIC_URL
-  }/aboutus-images/Yasha.png`;
-const consultant7 = `${import.meta.env.VITE_PUBLIC_URL
-  }/aboutus-images/Nishita.png`;
 // const consultant8 = `${import.meta.env.VITE_PUBLIC_URL
 //   }/aboutus-images/Sakshi.png`;
 // const consultant9 = `${
 //   import.meta.env.VITE_PUBLIC_URL
 // }/aboutus-images/Avanti.png`;
 const consultant9 = avanti
-const consultant10 = `${import.meta.env.VITE_PUBLIC_URL
-  }/aboutus-images/Shiraz.png`;
-const consultant11 = `${import.meta.env.VITE_PUBLIC_URL
-  }/aboutus-images/Anurag.png`;
-const consultant12 = `${import.meta.env.VITE_PUBLIC_URL
-  }/aboutus-images/Anupam.png`;
 
 // annual reports images
 const annualReport1 = `${import.meta.env.VITE_PUBLIC_URL
@@ -206,8 +192,6 @@ const consultants = [
   //   smallImgSrc: "consultant_12-small.png",
   // },
 ];
-
-const founder = `${import.meta.env.VITE_PUBLIC_URL}/aboutus-images/founder.png`;
 
 const About = () => {
   const [isOpen, setIsOpen] = useState(false);
