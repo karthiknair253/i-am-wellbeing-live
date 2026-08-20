@@ -4,8 +4,6 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 import BlurryImages from '../components/BlurryImages';
 
 
-const logo = `${import.meta.env.VITE_PUBLIC_URL}/Home/logonew.png`;
-
 import { Link } from "react-router-dom";
 
 const Footer = () => {

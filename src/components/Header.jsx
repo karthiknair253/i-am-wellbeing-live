@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import logo from "../imgs/Home/logonew.png";
 import BlurryImages from "../components/BlurryImages";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { BiDownArrowAlt, BiUpArrowAlt } from "react-icons/bi";
@@ -20,8 +21,6 @@ const SocialMedia = [
   { icon: <FaYoutube />, url: "https://youtube.com/@iamwellbeing.2015?si=46bI4JQ7_icR1gT9" },
   { icon: <FaLinkedinIn />, url: "https://www.linkedin.com/in/i-am-3b17b8104" },
 ];
-
-const logo = `${import.meta.env.VITE_PUBLIC_URL}/Home/logonew.png`;
 
 const Header = () => {
   const [show, setShow] = useState(false);

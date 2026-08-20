@@ -15,10 +15,6 @@ import trainer6 from "../imgs/tic/6.png"
 
 // import img from "../imgs/3a.png";
 
-const ticp2Img = `${import.meta.env.VITE_PUBLIC_URL}/ticp-images/2.png`;
-const ticp3Img = "/imgs/home-images/flow-chart.png";
-const ticp4Img = `${import.meta.env.VITE_PUBLIC_URL}/ticp-images/2aa.png`;
-
 // const trainer1 = `${import.meta.env.VITE_PUBLIC_URL}/home-images/trainer1.png`;
 // const trainer2 = `${import.meta.env.VITE_PUBLIC_URL}/home-images/trainer2.png`;
 // const trainer3 = `${import.meta.env.VITE_PUBLIC_URL}/home-images/trainer3.png`;
@@ -30,7 +26,6 @@ import graidingImg from "../imgs/home-images/graiding.png";
 
 // const trainer6 = `${import.meta.env.VITE_PUBLIC_URL}/home-images/trainer6.png`;
 
-const banner = `${import.meta.env.VITE_PUBLIC_URL}/ticp-images/ticp5.png`;
 import flowChart from "../imgs/home-images/Critical Analysis.png";
 
 import Faq from "../components/Faq";

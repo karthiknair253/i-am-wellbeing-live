@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import BlurryImages from "../components/BlurryImages";
-const team = `${import.meta.env.VITE_PUBLIC_URL}/Home/team2.png`;
 import { sendMessage, sendAccountDetails, sendNeeds } from "../components/Api";
 
 import bg from "../imgs/program-images/contactUsBg.png";
