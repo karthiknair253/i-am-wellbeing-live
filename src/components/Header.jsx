@@ -87,7 +87,7 @@ const Header = () => {
             <Link to="/">
               <LazyLoadImage
                 src={logo}
-                alt=""
+                alt="I Am Wellbeing home"
                 className=""
                 effect="blur"
                 placeholder={<BlurryImages imgUrl="Home/logonew-small.png" />}
@@ -215,7 +215,9 @@ const Header = () => {
       </header>
 
       <div className="flex md:hidden   items-center justify-between px-4 mobile-header z-20 bg-white fixed top-0 w-full">
-        <img loading="lazy" src={logo} alt="" className="w-[80px]" />
+        <Link to="/" aria-label="Go to home page">
+          <img loading="lazy" src={logo} alt="I Am Wellbeing home" className="w-[80px]" />
+        </Link>
         <HiMenuAlt3
           className="text-3xl font-[300] cursor-pointer"
           onClick={() => setToggle(true)}
