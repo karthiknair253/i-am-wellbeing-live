@@ -17,6 +17,8 @@ import team2 from "../imgs/about/pallavi-singh.png";
 import team3 from "../imgs/about/atufa-khan.png";
 import team4 from "../imgs/about/ishi-agarwal.png";
 import team5 from "../imgs/about/shubhi-bankawat.png";
+import teamBackground from "../imgs/about/team-background.png";
+import consultantBackground from "../imgs/about/consultant-background.png";
 import consultant1 from "../imgs/about/preeta-ganguli.png";
 import consultant2 from "../imgs/about/maitreyi-nigwekar.png";
 import consultant3 from "../imgs/about/veena-hari.png";
@@ -54,6 +56,7 @@ const teams = [
   {
     name: "Akanksha Chandele",
     imgSrc: team1,
+    portraitScale: 0.82,
     smallImgSrc: "team_1-small.png",
     designation: "Director / Senior Trainer & Supervisor",
     specialist: "Program Manager / Therapist",
@@ -63,6 +66,7 @@ const teams = [
   {
     name: "Atufa Khan",
     imgSrc: team3,
+    portraitScale: 0.96,
     smallImgSrc: "team_3-small.png",
     designation: "Head of Operations & Finance / Therapist",
     specialist: "Head of Operations & Finance / Therapist",
@@ -72,6 +76,7 @@ const teams = [
   {
     name: "Ishi Agarwal",
     imgSrc: team4,
+    portraitScale: 0.98,
     smallImgSrc: "team_4-small.png",
     designation: "Head of Programs / Therapist",
     specialist: "Head of Programs / Therapist",
@@ -82,6 +87,7 @@ const teams = [
   {
     name: "Shubhi Bankawat",
     imgSrc: team5,
+    portraitScale: 1,
     smallImgSrc: "team_5-small.png",
     designation: "Project Coordinator / Therapist",
     specialist: "Project Coordinator / Therapist",
@@ -92,6 +98,7 @@ const teams = [
   {
     name: "Pallavi Singh",
     imgSrc: team2,
+    portraitScale: 0.92,
     smallImgSrc: "team_2-small.png",
     designation: "Trainer and Supervisor / Therapist",
     specialist: "Trainer and Supervisor / Therapist",
@@ -102,6 +109,7 @@ const teams = [
 
     name: "Enas shuaib",
     imgSrc: team6,
+    portraitScale: 1.02,
     smallImgSrc: "team_5-small.png",
     designation: "Research Intern",
     specialist: "Research Intern",
@@ -115,66 +123,78 @@ const consultants = [
     name: "Preeta Ganguli",
     designation: "Training",
     imgSrc: consultant1,
+    portraitScale: 0.96,
     smallImgSrc: "consultant_1-small.png",
   },
   {
     name: "Maitreyi Nigwekar",
     designation: "Training",
     imgSrc: consultant2,
+    portraitScale: 0.88,
     smallImgSrc: "consultant_2-small.png",
   },
   {
     name: "Veena Hari",
     designation: "Training",
     imgSrc: consultant3,
+    portraitScale: 1.1,
     smallImgSrc: "consultant_3-small.png",
   },
   {
     name: "Rakshita Goel",
     designation: "Training",
     imgSrc: consultant4,
+    portraitScale: 0.84,
     smallImgSrc: "consultant_4-small.png",
   },
   {
     name: "Faseeh Amin Beig",
     designation: "Research",
     imgSrc: consultant5,
+    portraitScale: 0.92,
     smallImgSrc: "consultant_5-small.png",
   },
   {
     name: "Yasha Malhotra",
     designation: "Operations",
     imgSrc: consultant6,
+    portraitScale: 1.16,
     smallImgSrc: "consultant_6-small.png",
   },
   {
     name: "Dr. Nishtha Lamba",
     designation: "Research",
     imgSrc: consultant7,
+    portraitScale: 0.92,
+    portraitOffsetX: 6,
     smallImgSrc: "consultant_7-small.png",
   },
   {
     name: "Shambhavi singh",
     designation: "Training",
     imgSrc: consultant8,
+    portraitScale: 0.92,
     smallImgSrc: "consultant_8-small.png",
   },
   {
     name: "Sukun chandele",
     designation: "Legal",
     imgSrc: consultant9,
+    portraitScale: 0.82,
     smallImgSrc: "consultant_9-small.png",
   },
   {
     name: "Dr. Shiraz",
     designation: "Psychiatrist",
     imgSrc: consultant10,
+    portraitScale: 0.88,
     smallImgSrc: "consultant_10-small.png",
   },
   {
     name: "Anurag Chaubey",
     designation: "Content",
     imgSrc: consultant11,
+    portraitScale: 0.95,
     smallImgSrc: "consultant_11-small.png",
   },
   // {
@@ -194,23 +214,48 @@ const About = () => {
 
 
       {/* desktop */}
-      <div className="container mx-auto px-10 text-justify font-medium leading-8 lg:leading-10 text-lg sm:text-xl lg:mt-10 mt-5 italic">
-        <p className=" font-alegreya ">
-          “From the very first day I entered this field, the dark realities have
-          been unfolding one after another. As a new counsellor at a childcare
-          home, standing in front of 55 young girls, each a survivor of sexual
-          abuse, violence, and neglect, I realized that none of my degrees had
-          prepared me for this. Being a survivor of sexual abuse, I understood
-          the deep impact of trauma and the failure of systems meant to protect
-          us. It was a moment of reckoning that shifted the course of my life.
-          It pushed me to seek deeper training, take intensive supervision, and
-          become the kind of therapist I once needed. Working with trauma meant
-          unlearning what I knew and building a whole new skill set, one that is
-          rooted in presence, compassion, and connection.
-        </p>
+      <div
+        className="mx-auto mt-5 w-full px-5 text-left text-lg font-medium italic leading-8 sm:px-8 sm:text-xl lg:mt-8"
+        style={{ maxWidth: "1280px" }}
+      >
+            <p className="font-alegreya">
+              “From the very first day I entered this field, the dark realities
+              have been unfolding one after another. As a new counsellor at a
+              childcare home, standing in front of 55 young girls, each a
+              survivor of sexual abuse, violence, and neglect, I realized that
+              none of my degrees had prepared me for this. Being a survivor of
+              sexual abuse, I understood the deep impact of trauma and the
+              failure of systems meant to protect us. It was a moment of
+              reckoning that shifted the course of my life. It pushed me to seek
+              deeper training, take intensive supervision, and become the kind
+              of therapist I once needed. Working with trauma meant unlearning
+              what I knew and building a whole new skill set, one that is rooted
+              in presence, compassion, and connection.
+            </p>
 
-        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-5">
-          <div className="flex flex-col gap-4 lg:w-1/2">
+        <div className="mt-5 flow-root">
+          <motion.div
+            variants={breathe}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="mx-auto mb-6 flex w-full flex-col items-center gap-3 lg:float-right lg:mb-5 lg:ml-10 lg:w-[45%]"
+            style={{ maxWidth: "380px" }}
+          >
+            <img
+              loading="lazy"
+              decoding="async"
+              className="h-auto w-full border-2 border-[#545656] object-contain"
+              style={{ borderRadius: "1.5rem" }}
+              src={Founder1}
+              alt="Akanksha Chandele"
+            />
+            <p className="text-center font-alegreya text-xl font-bold sm:text-2xl">
+              Akanksha Chandele (they/them)
+            </p>
+          </motion.div>
+
+          <div className="space-y-3">
             <p className="font-alegreya">
               They say it takes a village, but our village was broken. I found
               only a few professionals who truly embodied trauma-informed care.
@@ -229,28 +274,6 @@ const About = () => {
               From the Founder&apos;s Desk
             </p>
           </div>
-
-          <motion.div
-            variants={breathe}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="flex flex-col items-center gap-4 lg:w-1/2 overflow-hidden rounded-4xl  "
-          >
-            <img
-              loading="lazy"
-              decoding="async"
-              className="w-full h-auto object-cover rounded-4xl border-2 border-[#545656]"
-              style={{ borderRadius: "1.5rem" }}
-              src={Founder1}
-              alt="Akansha"
-            />
-            <p className="font-bold text-xl sm:text-2xl font-alegreya">
-            Akanksha Chandele (they/them)
-            </p>
-          </motion.div>
-
-
         </div>
       </div>
       <div className=" flex justify-center items-center">
@@ -276,16 +299,26 @@ const About = () => {
                 }}
               >
                 <div className="relative w-[250px] h-[250px] md:w-[300px] md:h-[300px]">
+                  <img
+                    src={teamBackground}
+                    alt=""
+                    aria-hidden="true"
+                    className="absolute inset-0 h-full w-full object-contain"
+                  />
                   <LazyLoadImage
                     src={team.imgSrc}
-                    alt="team"
-                    className="w-full h-full object-cover rounded-xl"
+                    alt={team.name}
+                    className="absolute bottom-[3%] left-1/2 z-10 h-[88%] w-[84%] -translate-x-1/2 object-contain object-bottom"
+                    style={{
+                      transform: `translateX(-50%) scale(${team.portraitScale})`,
+                      transformOrigin: "bottom center",
+                    }}
                     placeholder={
                       <BlurryImages imgUrl={`home-images/${team.smallImgSrc}`} />
                     }
                   />
                 </div>
-                <div className="details text-center py-2 -mt-10 relative z-10">
+                <div className="details relative z-10 py-2 text-center">
                   <h6 className="font-bold uppercase text-lg text-black font-alegreya">
                     {team.name}
                   </h6>
@@ -308,13 +341,24 @@ const About = () => {
           {consultants.map((consultant, index) => {
             return (
               <div key={index} className="flex min-w-0 flex-col items-center text-center">
-                <div className="w-full max-w-[240px] aspect-square">
+                <div className="relative aspect-square w-full max-w-[240px]">
+                  <img
+                    src={consultantBackground}
+                    alt=""
+                    aria-hidden="true"
+                    className="absolute inset-0 h-full w-full object-contain"
+                  />
                   <img
                     loading="lazy"
                     decoding="async"
                     src={consultant.imgSrc}
                     alt={consultant.name}
-                    className={`w-full h-full object-contain `}
+                    className="absolute bottom-[5%] z-10 h-[84%] w-[80%] -translate-x-1/2 object-contain object-bottom"
+                    style={{
+                      left: `${50 + (consultant.portraitOffsetX ?? 0)}%`,
+                      transform: `translateX(-50%) scale(${consultant.portraitScale})`,
+                      transformOrigin: "bottom center",
+                    }}
                   />
                 </div>
 
